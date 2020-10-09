@@ -75,7 +75,7 @@ for data_row in body.find_all("tr"):
 
 # print(all_brewery_rows)
 
-column_titles = ["Name", "Metadata", "Deal"]
+column_titles = ["Name", "Location", "Deal"]
 
 brew = pd.DataFrame(all_brewery_rows, columns=column_titles)
 brew.to_csv("breweries.csv")
